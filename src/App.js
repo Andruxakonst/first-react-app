@@ -1,4 +1,4 @@
-import CostItem from "./components/CostItem";
+import Costs from "./components/Costs";
 function App() {
     const costs = [
         {
@@ -21,21 +21,7 @@ function App() {
   return (
     <div>
       <h1>Начнем изучение REACT</h1>
-        <CostItem
-            date={costs[0].date}
-            description={costs[0].description}
-            price={costs[0].price}>
-        </CostItem>
-        <CostItem
-            date={costs[1].date}
-            description={costs[1].description}
-            price={costs[1].price}>
-        </CostItem>
-        <CostItem
-            date={costs[2].date}
-            description={costs[2].description}
-            price={costs[2].price}>
-        </CostItem>
+        <Costs costs={costs}/>
     </div>
   );
 }
